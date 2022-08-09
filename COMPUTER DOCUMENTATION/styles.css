@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&family=Mouse+Memoirs&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: Ghostwhite;
+}
+
+
+/*=========================RETURN TO TOP LINK============================*/
+.back-top {
+  --angle: 0deg;
+  position: fixed;
+  bottom: 2vh;
+  left: 10vw;
+  font-size: 20px;
+  animation: animateBacktop 2s alternate infinite;
+  border-bottom: 0.2vh solid;
+  border-image: linear-gradient(var(--angle), #fff, #333) 1;
+}
+
+.back-top a, a:hover, a:active, a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+@keyframes animateBacktop {
+  0% {
+    --angle: 10deg;
+  }
+  5% {
+    --angle: 30deg;
+  }
+  10% {
+    --angle: 50deg;
+  }
+  15% {
+    --angle: 70deg;
+  }
+  20% {
+    --angle: 90deg;
+  }
+  25% {
+    --angle: 120deg;
+  }
+  30% {
+    --angle: 140deg;
+  }
+  35% {
+    --angle: 160deg;
+  }
+  40% {
+    --angle: 180deg;
+  }
+  45% {
+    --angle: 200deg;
+  }
+  50% {
+    --angle: 220deg;
+  }
+  55% {
+    --angle: 240deg;
+  }
+  60% {
+    --angle: 260deg;
+  }
+  65% {
+    --angle: 280deg;
+  }
+  70% {
+    --angle: 300deg;
+  }
+  75% {
+    --angle: 320deg;
+  }
+  80% {
+    --angle: 340deg;
+  }
+  85% {
+    --angle: 350deg;
+  }
+  90% {
+    --angle: 355deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+/*===========================RETURN TO TOP FINISH===========================*/
+
+@media (max-width: 800px) {
+  .side-bar {
+    display: none;
+  }
+}

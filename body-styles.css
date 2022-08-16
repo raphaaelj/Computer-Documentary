@@ -1,0 +1,86 @@
+/*===========================ONLY BODY=============================*/
+body {
+    position: relative;
+  }
+
+body > #main-doc {
+    margin-left: 5vw;
+    margin-right: 3vw;
+    display: flex;
+    background-color: white;
+} /*CREATES THE CONTENT*/
+
+body > #main-doc > .side-bar {
+  background-color: #B5C2B7;
+  width: 20vw;
+  max-width: 20vw;
+  padding: 1vh 2vh;
+  height: 100%;
+} /*CREATES THE SIDE MENU*/
+
+body > #main-doc > .side-bar > nav > header {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 3vh;
+} /*HEADER OF SIDE MENU*/
+
+body > main > div > nav > ul {
+  list-style: none;
+}
+
+body > main > div > nav > ul > li {
+  padding: 2vh 0;
+  transition-duration: 0.2s;
+}
+
+body > main > div > nav > ul > li > a {
+  text-decoration: none;
+  color: #333;
+}
+
+body > main > div > nav > ul > li:hover {
+  cursor: pointer;
+  transform: scale(1.05) translateX(15px);
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+/*FINISH*/
+
+/*===================================CONTENT OF BODY====================================*/
+.content {
+  display: inline-block;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  margin-left: 1vw;
+}
+
+.content a {
+    color: rgb(110, 180, 237);
+}
+
+.content > .main-section > header {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  margin-top: 2vh;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Mouse Memoirs', 'Genos', Arial, Helvetica, sans-serif;;
+}
+
+.content > .main-section {
+  margin-bottom: 2vh;
+}
+
+.content > .main-section > article > h5, h4 {
+  margin-top: 2vh;
+  margin-bottom: 0.3vh;
+}
+
+.content > section > article > ol {
+  margin-top: 1.2vh;
+  margin-bottom: 1.2vh;
+}
